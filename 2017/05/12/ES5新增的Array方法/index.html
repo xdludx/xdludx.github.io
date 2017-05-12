@@ -90,16 +90,16 @@
 
 
 
-<meta name="description" content="forEach()描述：遍历数组，为数组中的每一个元素调用指定的函数。 案例： 1234567var arr = [1, 2, 3, 4, 5];var sum = 0;arr.forEach(function(cur, i, a) &amp;#123;    // cur为当前值，i为当前索引，a为数组arr    sum += cur;&amp;#125;);console.log(sum); // 15 m">
+<meta name="description" content="forEach()描述：遍历数组，为数组中的每一个元素调用指定的函数。 案例： 1234567var arr = [1, 2, 3, 4, 5];var sum = 0;arr.forEach(function(cur, i, a) &amp;#123;    // cur为当前值，i为当前索引，a为数组arr    sum += cur;&amp;#125;);console.log(sum); // 15">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES5新增的Array方法">
 <meta property="og:url" content="http://yoursite.com/2017/05/12/ES5新增的Array方法/index.html">
 <meta property="og:site_name" content="xdludx">
-<meta property="og:description" content="forEach()描述：遍历数组，为数组中的每一个元素调用指定的函数。 案例： 1234567var arr = [1, 2, 3, 4, 5];var sum = 0;arr.forEach(function(cur, i, a) &amp;#123;    // cur为当前值，i为当前索引，a为数组arr    sum += cur;&amp;#125;);console.log(sum); // 15 m">
-<meta property="og:updated_time" content="2017-05-12T05:52:46.000Z">
+<meta property="og:description" content="forEach()描述：遍历数组，为数组中的每一个元素调用指定的函数。 案例： 1234567var arr = [1, 2, 3, 4, 5];var sum = 0;arr.forEach(function(cur, i, a) &amp;#123;    // cur为当前值，i为当前索引，a为数组arr    sum += cur;&amp;#125;);console.log(sum); // 15">
+<meta property="og:updated_time" content="2017-05-12T06:06:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES5新增的Array方法">
-<meta name="twitter:description" content="forEach()描述：遍历数组，为数组中的每一个元素调用指定的函数。 案例： 1234567var arr = [1, 2, 3, 4, 5];var sum = 0;arr.forEach(function(cur, i, a) &amp;#123;    // cur为当前值，i为当前索引，a为数组arr    sum += cur;&amp;#125;);console.log(sum); // 15 m">
+<meta name="twitter:description" content="forEach()描述：遍历数组，为数组中的每一个元素调用指定的函数。 案例： 1234567var arr = [1, 2, 3, 4, 5];var sum = 0;arr.forEach(function(cur, i, a) &amp;#123;    // cur为当前值，i为当前索引，a为数组arr    sum += cur;&amp;#125;);console.log(sum); // 15">
 
 
 
@@ -319,6 +319,7 @@
         <h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach()"></a>forEach()</h3><p>描述：遍历数组，为数组中的每一个元素调用指定的函数。</p>
 <p>案例：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> sum = <span class="number">0</span>;</div><div class="line">arr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">cur, i, a</span>) </span>&#123;</div><div class="line">    <span class="comment">// cur为当前值，i为当前索引，a为数组arr</span></div><div class="line">    sum += cur;</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(sum); <span class="comment">// 15</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h3><p>描述：调用方式和<code>forEach()</code>一样，区别是必须有返回值，而且肯定会返回一个数组。</p>
 <p>案例：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</div><div class="line"><span class="keyword">var</span> newArr = arr.map(<span class="function"><span class="keyword">function</span>(<span class="params">cur, i, a</span>) </span>&#123;</div><div class="line">    <span class="comment">// 这是数组中每个元素的返回值。</span></div><div class="line">    <span class="keyword">return</span> a[i] * cur;</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(newArr);</div></pre></td></tr></table></figure>
@@ -368,22 +369,6 @@
         
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/05/12/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -452,7 +437,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
