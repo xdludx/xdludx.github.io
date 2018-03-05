@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="js判断变量类型的方法 let class2type = {};let types = “Boolean Number String Function Array Date RegExp Object Error”;tepes.replace(/[^, ]+/g, (name) =&amp;gt; {    class2type[“[object “ + name + “]”] = name.toLowe">
+<meta name="description" content="js判断变量类型的方法">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS判断变量类型的方法">
 <meta property="og:url" content="http://yoursite.com/2018/03/05/JS判断变量类型的方法/index.html">
 <meta property="og:site_name" content="xdludx">
-<meta property="og:description" content="js判断变量类型的方法 let class2type = {};let types = “Boolean Number String Function Array Date RegExp Object Error”;tepes.replace(/[^, ]+/g, (name) =&amp;gt; {    class2type[“[object “ + name + “]”] = name.toLowe">
-<meta property="og:updated_time" content="2018-03-05T07:11:03.000Z">
+<meta property="og:description" content="js判断变量类型的方法">
+<meta property="og:updated_time" content="2018-03-05T07:15:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS判断变量类型的方法">
-<meta name="twitter:description" content="js判断变量类型的方法 let class2type = {};let types = “Boolean Number String Function Array Date RegExp Object Error”;tepes.replace(/[^, ]+/g, (name) =&amp;gt; {    class2type[“[object “ + name + “]”] = name.toLowe">
+<meta name="twitter:description" content="js判断变量类型的方法">
 
 
 
@@ -339,7 +339,8 @@
 
       
         <p>js判断变量类型的方法</p>
-<p>let class2type = {};<br>let types = “Boolean Number String Function Array Date RegExp Object Error”;<br>tepes.replace(/[^, ]+/g, (name) =&gt; {<br>    class2type[“[object “ + name + “]”] = name.toLowerCase();<br>})<br>let getType = (obj) =&gt; {<br>    if (obj == null) {<br>        return String(obj);<br>    }<br>    if (typeof obj === “object” || typeof obj === “function”) {<br>        return class2type[Object.prototype.toString.call(obj)] || “object”;<br>    } else {<br>        return typeof obj;<br>    }<br>}</p>
+<a id="more"></a>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> class2type = &#123;&#125;;</div><div class="line"><span class="keyword">let</span> types = <span class="string">"Boolean Number String Function Array Date RegExp Object Error"</span>;</div><div class="line">tepes.replace(<span class="regexp">/[^, ]+/g</span>, (name) =&gt; &#123;</div><div class="line">    class2type[<span class="string">"[object "</span> + name + <span class="string">"]"</span>] = name.toLowerCase();</div><div class="line">&#125;)</div><div class="line"><span class="keyword">let</span> getType = <span class="function">(<span class="params">obj</span>) =&gt;</span> &#123;</div><div class="line">    <span class="keyword">if</span> (obj == <span class="literal">null</span>) &#123;</div><div class="line">        <span class="keyword">return</span> <span class="built_in">String</span>(obj);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> obj === <span class="string">"object"</span> || <span class="keyword">typeof</span> obj === <span class="string">"function"</span>) &#123;</div><div class="line">        <span class="keyword">return</span> class2type[<span class="built_in">Object</span>.prototype.toString.call(obj)] || <span class="string">"object"</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">typeof</span> obj;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>以上方法来源于avalon源码，其中不包含一些es6变量的判断，如果需要加es6变脸类型判断需要在types字符串中添加相应变量。</p>
 
       
